@@ -1,0 +1,23 @@
+﻿<Window x:Class="Dice_Game.againstComputerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Player VS PC" Height="231" Width="283" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,0" RenderTransformOrigin="0.502,0.504">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Your Points:" HorizontalAlignment="Left" Margin="6,10,0,0" VerticalAlignment="Top" Height="26" Width="73"/>
+        <Label Content="Computer's Points:" HorizontalAlignment="Left" Margin="131,10,0,0" VerticalAlignment="Top" Height="26" Width="109"/>
+        <Button x:Name="rollButton" Content="Roll a dice!" HorizontalAlignment="Left" Margin="30,161,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="Button_Click"/>
+        <GroupBox Header="You rolled:" HorizontalAlignment="Left" Margin="4,36,0,0" VerticalAlignment="Top" Height="121" Width="128">
+            <Label x:Name="throw_value_user" Content="" HorizontalAlignment="Left" Margin="32,-11,0,0" VerticalAlignment="Top" FontSize="72"/>
+        </GroupBox>
+        <GroupBox Header="Computer rolled:" HorizontalAlignment="Left" Margin="137,36,0,0" VerticalAlignment="Top" Height="121" Width="128">
+            <Label x:Name="throw_value_computer" Content="" HorizontalAlignment="Left" Margin="32,-11,0,0" VerticalAlignment="Top" FontSize="72"/>
+        </GroupBox>
+        <Label x:Name="userPoints" Content="0" HorizontalAlignment="Left" Margin="79,10,0,0" VerticalAlignment="Top" Height="26" Width="26"/>
+        <Label x:Name="computerPoints" Content="0" HorizontalAlignment="Left" Margin="240,10,0,0" VerticalAlignment="Top" Height="26" Width="23"/>
+
+    </Grid>
+</Window>

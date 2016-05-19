@@ -1,0 +1,16 @@
+﻿<Window x:Class="Dice_Game.pvp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Player VS Player" Height="218" Width="322" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="p1roll" Content="Roll Player 1!" HorizontalAlignment="Left" Margin="5,156,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click"/>
+        <Button x:Name="p2roll" Content="Roll Player 2!" HorizontalAlignment="Left" Margin="155,156,0,0" VerticalAlignment="Top" Width="135" IsEnabled="False" Click="p2roll_Click"/>
+        <GroupBox Header="Player 1 dice" HorizontalAlignment="Left" Margin="5,33,0,0" VerticalAlignment="Top" Height="118" Width="135"/>
+        <GroupBox Header="Player 2 dice" HorizontalAlignment="Left" Margin="154,33,0,0" VerticalAlignment="Top" Height="118" Width="135"/>
+        <Label x:Name="p1label" Content="" HorizontalAlignment="Left" Margin="48,52,0,0" VerticalAlignment="Top" FontSize="64"/>
+        <Label x:Name="p2label" Content="" HorizontalAlignment="Left" Margin="202,52,0,0" VerticalAlignment="Top" FontSize="64"/>
+        <Label x:Name="p1total" Content="Player 1 total points:" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="144"/>
+        <Label x:Name="p2total" Content="Player 2 total points:" HorizontalAlignment="Left" Margin="155,10,0,0" VerticalAlignment="Top" Width="149"/>
+
+    </Grid>
+</Window>
